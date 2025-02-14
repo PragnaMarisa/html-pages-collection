@@ -21,7 +21,7 @@
       }
       #top-sub-header {
         font-size: 16px;
-        padding: 10px;
+        padding: 16px;
         width: 1040px;
         height: 50px;
         margin: auto;
@@ -59,19 +59,46 @@
       }
 
       #article2 {
+        width: 750px;
+        height: 450px;
+        float: right;
+        border-bottom: 1px solid;
+      }
+
+      #article3 {
         width: 300px;
         height: 300px;
         float: left;
         border-top: 1px solid;
         border-right: 1px solid;
+        border-bottom: 1px solid;
       }
+      #article4 {
+        width: 430px;
+        height: 300px;
+        float: left;
+        border-bottom: 1px solid;
+        border-right: 1px solid;
+      }
+      #article5 {
+         width: 320px;
+        height: 300px;
+        float: left;
+        border-bottom: 1px solid;
+        border-right: 1px solid;
+      }
+
       p {
         font-family: serif;
         letter-spacing: 0.5px;
         font-weight: 300;
-        margin: 10px;
+        padding: 10px;
         font-size: 16px;
         line-height: 20px;
+      }
+
+      figure {
+        margin: 10px;
       }
 
       figcaption {
@@ -97,22 +124,24 @@
 
       <section style="height: 450px">
         <article id="article1">
-          <img
-            src="../images/tajMahal.jpg"
-            alt="taj mahal"
-            style="width: 290px; height: 200px"
-          />
-          <p style="width: 280px; height: 200px">
+          <figure style="float: left">
+            <img
+              src="../images/tajMahal.jpg"
+              alt="taj mahal"
+              style="width: 260px; height: 200px"
+            />
+            <figcaption>The Taj Mahal</figcaption>
+          </figure>
+          <p>
             The Taj Mahal is a 17th Century riverfront mausoleum in Agra city
             which was built by Mughal emperor Shah Jahan in memory of his queen
             Mumtaz who died while giving birth to their 14th child. The stunning
             monument - built with brick, red sandstone and white marble and
-            famed for its intricate lattice work - is one of India's biggest
-            tourist attractions.
+            famed for its intricate lattice work.
           </p>
         </article>
 
-        <article style="width: 750px; height: 450px; float: right">
+        <article id="article2">
           <figure style="float: right">
             <img
               src="../images/neerajchopra.jpg"
@@ -146,8 +175,8 @@
         </article>
       </section>
       <section style="height: 300px">
-        <article id="article2">
-          <figure style="float: left; margin-right: 10px">
+        <article id="article3">
+          <figure style="float: left">
             <img
               src="../images/gst.webp"
               alt="gst image"
@@ -164,25 +193,43 @@
             taxes except a few state taxes.
           </p>
         </article>
-        <article style="width: 430px; height: 300px; float: left">
-          <figure style="float: right; margin-right: 10px">
+        <article id="article4">
+          <figure style="float: right">
             <img
               src="../images/samosa.cms"
               alt="gst image"
               width="130px"
               height="100px"
             />
-            <figcaption>GST</figcaption>
+            <figcaption>Samosa</figcaption>
           </figure>
+          <p>
+            A samosa ( Persian: سمبوسه) from the Persian word sambosag (سنبوسگ)
+            (meaning 'triangular pastry') is a fried South Asian and West Asian
+            snack. It is a pastry with a savory filling, mostly vegetables,
+            spiced potatoes, onions, and peas, but also meat or fish. It is made
+            in different shapes, including triangular, cone, or crescent,
+            depending on the region. Samosas are often accompanied by chutney,
+            and have origins in medieval times or earlier. Sweet versions are
+            also made. Samosas are a popular appetizer, or snack in the cuisines
+            of India, Central Asia, Portugal, East Africa and their South Asian
+            diasporas.
+          </p>
         </article>
-        <div
-          style="
-            width: 320px;
-            height: 300px;
-            display: inline-block;
-            background-color: gold;
-          "
-        ></div>
+        <article id="article5"><figure style="float: left">
+            <img
+              src="../images/simhachalam.jpg"
+              alt="simhachalam"
+              width="140px"
+              height="100px"
+            />
+            <figcaption>Simhachalam</figcaption>
+          </figure>
+          <p>
+            Sri Varaha Lakshmi Narasimha temple, Simhachalam, is a Hindu temple situated on the Simhachalam Hill Range,which is 300 metres above the sea level in the city of Visakhapatnam, Andhra Pradesh, India. It is dedicated to Lord Vishnu, who is worshipped there as Varaha Narasimha. Simhachalam is one of the 32 Narasimha temples in Andhra Pradesh which are important pilgrimage centres.
+          </p></article>
+
+        </div>
       </section>
     </main>
   </body>
