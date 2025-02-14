@@ -1,149 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>OnePlus Nord2</title>
+    <title>OnePlus Nord 2</title>
     <style>
-      *{
+      * {
         margin: 0px;
+        box-sizing: border-box;
       }
 
       body {
         background-color: #e6eef2;
       }
-      article{
+
+      article {
         font-size: 19px;
-        width: 800px;
+        width: 880px;
         background-color: rgb(230, 236, 236);
         font-family: serif;
         letter-spacing: 0.5px;
         line-height: 21px;
-        margin:50px auto;
+        margin: 50px auto;
         border: 10px solid rgb(97, 140, 157);
         border-radius: 24px;
-        /* box-shadow: 2px 0px 12px 20px rgba(164, 159, 159, 0.5) ; */
-        height: 750px;
+        height: 640px;
         text-align: center;
-      }
-      p,ul, strong{
-        color:#023047;
+        padding: 20px;
       }
 
-      ul{
-        line-height: 24px;
-        margin: 30px 5px;
-        font-weight: 300;
-        text-align: left;
+      p,
+      ul,
+      strong {
+        color: #023047;
       }
 
-      #list-features{
-        list-style: none;
-      }
-      td{
+      td {
         padding: 5px 20px;
       }
 
       header {
         font-size: 42px;
         font-weight: 600;
-        margin: 50px 10px;
-        text-shadow: 3px 3px rgba(245,245,245,40%);
-        
+        margin: 40px 10px;
+        text-shadow: 3px 3px rgba(245, 245, 245, 40%);
       }
 
       table {
         margin-bottom: 50px;
       }
 
-     
+      a > img {
+        width: 100px;
+        height: 100px;
+        box-shadow: 3px 4px 12px gray;
+        border-radius: 15px;
+        margin: 1px 2px;
+      }
+
+      section {
+        margin-left: 30px;
+      }
+
+      h3 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      p {
+        padding-bottom: 40px;
+        text-align: center;
+      }
+
+      .button {
+        text-align: center;
+        border: 1px transparent;
+        height: 35px;
+        display: block;
+        border-radius: 30px;
+        padding: 7px;
+        width: 300px;
+        /* float: left; */
+        margin-bottom: 20px;
+        margin-left: 30px;
+        /* float: right; */
+      }
+      #icon {
+        width: 20px;
+        height: 20px;
+      }
+
+      .color-buds:hover {
+        border: 2px solid black;
+      }
+
+      .main-image {
+        width: 400px;
+        height: 400px;
+        display: inline-block;
+        background-image: url(../images/earbuds.webp);
+        background-size: cover;
+      }
+
+      #art-1:has(#blue-buds:target) .main-image {
+        background-image: url("../images/bluebuds.png");
+      }
+      #art-1:has(#black-buds:target) .main-image {
+        background-image: url("../images/earbuds.webp");
+      }
+      #art-1:has(#white-buds:target) .main-image {
+        background-image: url("../images/whitebuds.png");
+      }
     </style>
   </head>
   <body>
-     <article
-    >
-      <img src="../images/earbuds.webp" alt="earbuds image" width="400px" height="400px" style="float: right;"/>
+    <article>
+      <section id="art-1" style="float: left">
+        <!-- <img src="../images/earbuds.webp" alt="earbuds image" /> -->
+        <div class="main-image"></div>
+        <h3>Available Colors:</h3>
+        <a href="#black-buds">
+          <img
+            src="../images/earbuds.webp"
+            alt="black buds"
+            id="black-buds"
+            class="color-buds"
+          />
+        </a>
+        <a href="#blue-buds">
+          <img
+            src="../images/bluebuds.png"
+            alt="blue buds"
+            id="blue-buds"
+            class="color-buds"
+          />
+        </a>
+        <a href="#white-buds">
+          <img
+            src="../images/whitebuds.png"
+            alt="white buds"
+            id="white-buds"
+            class="color-buds"
+          />
+        </a>
+      </section>
+      <div style="float: left; margin-top: 60px">
         <header>OnePlus Nord 2</header>
-        <p style="font-size: 30px; margin: 28px 0px; font-weight: 400;">₹2,999</p>
-
-
-     <ul>
-        <li>The buds comes with 12.4mm driver unit, which delivers crisp clear and enhanced bass quality sound experience</li>
-        <li>The flagship-level battery life for the all-new OnePlus Nord Buds 2r delivers up to 38 hrs of non-stop music on a single charge.; [IP55 rating]: IP55 Water & Sweat Resistance</li>
-        <li>Comfortable ear cushions for extended use</li>
-      </ul> 
-
-      <table style="float: left; border-right: 2px solid gray">
-        <tbody>
-          <tr>
-            <td>Brand</td>
-            <td>:</td>
-            <td>OnePlus</td>
-          </tr>
-          <tr>
-            <td>Colour</td>
-            <td>:</td>
-            <td>Deep Grey</td>
-          </tr>
-          <tr>
-            <td>Charging Time</td>
-            <td>:</td>
-            <td>38 Hours</td>
-          </tr>
-          <tr>
-            <td>Ear Placement</td>
-            <td>:</td>
-            <td>In Ear</td>
-          </tr>
-          <tr>
-            <td>Form Factor</td>
-            <td>:</td>
-            <td>True Wireless</td>
-          </tr>
-          <tr>
-            <td>Headphones</td>
-            <td>:</td>
-            <td>Jack usb</td>
-          </tr>
-        </tbody>
-      </table>
-      <table style="float: left;">
-        <tbody>
-          <tr>
-            <td>Item Weight</td>
-            <td>:</td>
-            <td>38 g</td>
-          </tr>
-          <tr>
-            <td>Bluetooth Range</td>
-            <td>:</td>
-            <td>10 Metres</td>
-          </tr>
-          <tr>
-            <td>Audio Driver Size</td>
-            <td>:</td>
-            <td>12.4 Millimetres</td>
-          </tr>
-          <tr>
-            <td>tem Dimensions</td>
-            <td>:</td>
-            <td>29 x 20 x 23 mm</td>
-          </tr>
-          <tr>
-            <td>Country of Origin</td>
-            <td>:</td>
-            <td>China</td>
-          </tr>
-          <tr>
-            <td>Ratings</td>
-            <td>:</td>
-            <td>⭐️⭐️⭐️⭐️</td>
-          </tr>
-        </tbody>
-      </table>
-       
-      <strong>Available in Black, Whilte, and Blue</strong>
-      
-      
-    </body>
-    </html>
-    
-   
+        <p style="font-size: 30px; font-weight: 400">
+          <span style="color: red">-30%</span> ₹2,999
+          <span
+            style="text-decoration: line-through; color: grey; font-size: 16px"
+            >₹3,999</span
+          >
+        </p>
+        <p style="font-size: 23px">Ratings: ⭐️⭐️⭐️⭐️</p>
+        <p style="color: green">In stock</p>
+        <a class="button" style="background-color: #ffb703">Add to Cart</a>
+        <a class="button" style="background-color: #fb8500">Buy Now</a>
+        <p>
+          <img src="../images/map.png" alt="map" id="icon" />
+          Delivering to Banglore 562 130
+        </p>
+      </div>
+    </article>
+  </body>
+</html>
