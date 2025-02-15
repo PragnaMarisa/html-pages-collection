@@ -27,16 +27,6 @@
         padding: 20px;
       }
 
-      p,
-      ul,
-      strong {
-        color: #023047;
-      }
-
-      td {
-        padding: 5px 20px;
-      }
-
       header {
         font-size: 42px;
         font-weight: 600;
@@ -51,7 +41,7 @@
       a > img {
         width: 100px;
         height: 100px;
-        box-shadow: 3px 4px 12px gray;
+        box-shadow: 3px 4px 15px gray;
         border-radius: 15px;
         margin: 1px 2px;
       }
@@ -77,11 +67,21 @@
         border-radius: 30px;
         padding: 7px;
         width: 300px;
-        /* float: left; */
         margin-bottom: 20px;
         margin-left: 30px;
-        /* float: right; */
       }
+
+      #description {
+        float: left;
+        margin-top: 60px;
+      }
+
+      #original-price {
+        text-decoration: line-through;
+        color: grey;
+        font-size: 16px;
+      }
+
       #icon {
         width: 20px;
         height: 20px;
@@ -143,21 +143,18 @@
           />
         </a>
       </section>
-      <div style="float: left; margin-top: 60px">
+      <div id="description">
         <header>OnePlus Nord 2</header>
         <p style="font-size: 30px; font-weight: 400">
           <span style="color: red">-30%</span> ₹2,999
-          <span
-            style="text-decoration: line-through; color: grey; font-size: 16px"
-            >₹3,999</span
-          >
+          <span id="original-price">₹3,999</span>
         </p>
         <p style="font-size: 23px">Ratings: ⭐️⭐️⭐️⭐️</p>
         <p style="color: green">In stock</p>
         <a class="button" style="background-color: #ffb703">Add to Cart</a>
         <a class="button" style="background-color: #fb8500">Buy Now</a>
         <p>
-          <img src="../images/map.png" alt="map" id="icon" />
+          <img src="../images/map.png" alt="map icon" id="icon" />
           Delivering to Banglore 562 130
         </p>
       </div>
